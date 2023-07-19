@@ -1,0 +1,156 @@
+/* style3.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.calculator {
+  border: 2px solid #505050;
+  padding: 1.875rem;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 45px 65px rgba(1,1,1,0.50), 0 35px 22px rgba(1,1,1,0.16);
+}
+
+.display input {
+  height: 10.375rem;
+  width: 20rem;
+  text-align: right;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 40px;
+  color: #D4D4D2;
+  font-weight: 200;
+}
+
+.btn input {
+  height: 4.75rem;
+  width: 4.75rem;
+  color: #D4D4D2;
+  border-radius: 50%;
+  background-color: #505050;
+  margin: 10px;
+  padding: 10px;
+  font-size: x-large;
+  box-shadow: none;
+  font-weight: 100;
+}
+
+ div .operetor{
+  background-color: #FF9500;
+  color: white;
+}
+div .operetor-1{
+  background-color: #D4D4D2;
+  color: black;
+}
+
+/* Mobile - 393x851 */
+@media (max-width: 500px) and (max-height: 950px) {
+  .calculator {
+    padding: 1rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .display input {
+    
+    width: 16rem;
+    font-size: 30px;
+    height: 6rem;
+  }
+
+  .btn input {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 30px;
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+}
+
+@media (max-width: 363px) {
+  .calculator {
+    padding: 0.875rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .display input {
+    height: 7rem;
+    width: 16rem;
+    font-size: 30px;
+  }
+
+  .btn input {
+    height: 3.25rem;
+    width: 3.25rem;
+    font-size: 26px;
+  }
+}
+
+/* Width less than 328px */
+@media (max-width: 328px) {
+  .calculator {
+    padding: 0.625rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .display input {
+    height: 5.875rem;
+    width: 14rem;
+    font-size: 24px;
+  }
+
+  .btn input {
+    height: 2.875rem;
+    width: 2.875rem;
+    font-size: 20px;
+  }
+}
+
+/* Width less than 281px */
+@media (max-width: 281px) {
+  .calculator {
+    padding: 0.625rem;
+  }
+
+  .display input {
+    height: 5.875rem;
+    width: 14rem;
+    font-size: 24px;
+  }
+
+  .btn input {
+    height: 2.875rem;
+    width: 2.875rem;
+    font-size: 20px;
+  }
+}
+
